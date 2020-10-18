@@ -1,28 +1,17 @@
-{    
+{
+    "name": "程式小白最新JS資訊不漏接",
+    "version": "1.0",
+    "description": "一起學coding吧！",
     "manifest_version": 2,
-    "name": "小白的擴充套件",
-    "version": "1.0.0",
-    "description": "顯示小白文章和 Podcast 通知",
-    "icons": {
-        "16": "icon2.png",
-        "48": "icon2.png",
-        "128": "icon2.png"
-    },
+    "permissions": [ "activeTab", "storage" ],
     "browser_action": {
-        "deflaut_icon": "icon2.png",
-        "deflaut_popup": "popup.html"
-    },
-    "permissions": [
-        "activeTab"
-    ],
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.google.com.tw/*"
-            ],
-            "js": [
-                "execute.js"
-            ]
+        "default_title": "Google Mail",
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "iris.png",
+          "32": "iris.png",
+          "48": "iris.png",
+          "128": "iris.png"
         }
-    ]
+      }
 }
